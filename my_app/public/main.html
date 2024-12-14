@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>메인 페이지</h1>
+    {% if list %}   <!--리스트에 있는게 있으면-->
+        {{ list }}
+    {% else %}      <!--리스트에 있는게 없으면-->
+        <p> 작성된 글이 없습니다.</p>
+    {% endif %}
+{% endblock %}
